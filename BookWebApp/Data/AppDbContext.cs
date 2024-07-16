@@ -9,6 +9,7 @@ namespace BookWebApp.Data
         {
             
         }
+        // Коннект таблиц
         public DbSet<Author> Authors { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Publisher> Publishers { get; set; }
@@ -197,9 +198,6 @@ namespace BookWebApp.Data
                         new() { PublisherId = 2, AuthorId = 1 }
                     );
                 });
-
-
-
             });
         }
     }
